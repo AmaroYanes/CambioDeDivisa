@@ -29,8 +29,9 @@ public class CambioDivisa extends Application {
 		origenText = new TextField("0");
 		origenText.maxWidth(20);
 		
-		destinoText = new TextField("0");
+		destinoText = new TextField();
 		destinoText.maxWidth(20);
+		destinoText.setEditable(false);
 		
 		origen = new ComboBox<String>();
 		origen.getItems().addAll("Euro","Libra","Dolar","Yen");
